@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RouteWise</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Logo and Input Bar Wrapper -->
+        <div class="logo-input-wrapper">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/download.png') }}" alt="RouteWise Logo">
+            </div>
+
+            <!-- Input Bar -->
+            <form action="/predict" method="POST" class="form-group">
+                <div class="search-container">
+                    <!-- Input Box -->
+                    <input type="text" id="user_input" name="user_input" placeholder="Enter your complaint..." value="{{ user_input }}" required>
+                </div>
+            </form>
+        </div>
+
+        <!-- Prediction Result -->
+        {% if prediction %}
+        <div class="result-container">
+            <div class="result-box">
+                <h2>Prediction Result</h2>
+                <p><strong>Classified Label:</strong> {{ prediction }}</p>
+                <p><strong>Complaint ID:</strong> {{ complaint_id }}</p>
+                <p><strong>Confidence Score:</strong> {{ "%.2f"|format(confidence) }}</p>
+            </div>
+            <div class="result-box">
+                <h2>Agent Routing</h2>
+                <p><strong>Assigned Agent:</strong> {{ assigned_agent }}</p>
+                <p><strong>Experience Level:</strong> {{ experience_level }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
