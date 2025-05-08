@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - Sentiment classification using a fine-tuned BERT model
 - Automated complaint prioritization (Highly Dissatisfied → Satisfied)
@@ -13,7 +13,7 @@
 - MySQL database for storing complaints, agents, and routing logs
 ---
 
-## 🎯 Project Goal
+## Project Goal
 
 Develop a system that reads customer complaints, classifies them based on emotional tone, and automatically routes high-priority cases to experienced agents—enhancing resolution speed and customer satisfaction.
 
@@ -46,9 +46,9 @@ Develop a system that reads customer complaints, classifies them based on emotio
 
 ## Tech Stack
 
-Language         Python, SQL, HTML/CSS
-ML/NLP           TensorFlow, Hugging Face Transformers
-Backend API      Flask 
-Database         MySQL
-Frontend         HTML, CSS
+Language         Python, SQL, HTML/CSS \
+ML/NLP           TensorFlow, Hugging Face Transformers \
+Backend API      Flask \
+Database         MySQL \
+Frontend         HTML, CSS \
 Dev Tools        Google Colab, Visual Studio Code
