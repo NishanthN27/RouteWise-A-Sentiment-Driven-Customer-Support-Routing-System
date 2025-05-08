@@ -7,8 +7,8 @@
 ## Key Features
 
 - Sentiment classification using a fine-tuned BERT model
-- Automated complaint prioritization (Highly Dissatisfied → Satisfied)
-- Smart routing logic based on agent specialization
+- Automated complaint prioritization based on sentiment (Highly Dissatisfied → Satisfied)
+- Routing logic based on agent experience level
 - Flask backend API for seamless model integration
 - MySQL database for storing complaints, agents, and routing logs
 ---
@@ -46,9 +46,9 @@ Develop a system that reads customer complaints, classifies them based on emotio
 
 ## Tech Stack
 
-Language         Python, SQL, HTML/CSS \
-ML/NLP           TensorFlow, Hugging Face Transformers \
-Backend API      Flask \
-Database         MySQL \
-Frontend         HTML, CSS \
-Dev Tools        Google Colab, Visual Studio Code
+Language :        Python, SQL, HTML/CSS \
+ML/NLP   :       TensorFlow, Hugging Face Transformers \
+Backend API :     Flask \
+Database  :       MySQL \
+Frontend   :      HTML, CSS \
+Dev Tools   :     Google Colab, Visual Studio Code
